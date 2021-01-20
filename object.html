@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <style>
+    body {
+    background-color: rgb(163, 206, 241);
+    font-family:'Courier New', Courier, monospace;
+    }      
+    .container {
+        background-size: cover;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    } 
+    .gambar {
+        display: flex;
+        align-items: flex-start;
+    }     
+    h1 {
+        opacity: 0.7;
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-bottom: 5px;
+    }
+    img {
+        width: 100px;
+        height: 50px;
+        margin: 0 10px 10px 0;
+        padding: 0 15px 15px 0;
+    }
+    .bus {
+        transition: all 2s linear;
+        animation: animasiKotak 10s ease-in infinite;
+    }
+    @keyframes animasiKotak {
+    0% {
+        width: 100px;
+        height: 50px;
+        } 100% {
+        margin-left: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="judul">
+            <h1>SISTEM KENDARAAN</h1>
+        </div>
+        <br>
+        <div class="gambar">
+            <img src='bushijau.png' class='bus'>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
